@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+	
+}
+body {
+	font-size: 14px;
+	color: #333;
+	margin: 0px;
+	padding: 0px;
+	background-color: #F1EBE9;
+}/*设置主体文字大小、颜色、背景等样式*/
+.container {
+	max-width: 1280px;
+	margin: 0px auto;
+	overflow: auto;
+	display: block;
+}/*给放置主体内容的容器设置最大宽度，并将其内容居中显示，当内容溢出出现滚动条，设置成块级元素*/
+a {
+	text-decoration: none;
+	color: black;
+}
+ul {
+	list-style: none;
+}
+.clearf:after, .clearf:before {
+	content: " ";
+	display: block;
+	clear: both;
+}/*给浮动元素前后增加伪元素，清除浮动*/
+
+/*设置不同宽度的块级区域，使其想做浮动，设置position为relative*/
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 {
+	display: block;
+	float: left;
+	position: relative;
+}
+.col-1 {
+	width: 10%;
+}
+.col-2 {
+	width: 20%;
+}
+.col-3 {
+	width: 30%;
+}
+.col-4 {
+	width: 40%;
+}
+.col-5 {
+	width: 50%;
+}
+.col-6 {
+	width: 60%;
+}
+.col-7 {
+	width: 70%;
+}
+.col-8 {
+	width: 80%;
+}
+.col-9 {
+	width: 90%;
+}
+
+/*设置首页左侧样式*/
+.leftside .leftcontent {
+	margin-top: -55px;
+	padding: 5px 10px;
+}
+.leftside .leftcontent > * {
+	padding-left: 20px;
+	line-height: 200%;
+}
+.leftside .leftcontent .name {
+	margin-top: -20px;
+	font-size: 50px;
+	font-weight: bold;
+	color: #1B1E36;
+	text-align: center;
+}
+.leftside .leftcontent .tag {
+	margin-top: -15px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+.leftside .leftcontent .item {
+	padding: 5px 10px;
+}
+.leftside .photo {
+	width: 300px;
+	height: 300px;
+	margin-top: -55px;
+	align-content: center;
+}
+.leftside .info p {
+	padding-left: 13px;
+	margin-bottom: -10px;
+}
+.conment img {
+	margin: -30px 0px;
+}
+
+/*设置主页导航样式*/
+.nav {
+	margin-top: 15px;
+	margin-bottom: 50px;
+	margin-left: -19px;
+}
+.nav ul li {
+	position: relative;
+	float: left;
+	line-height: 35px;
+	width: 89px;
+	border-right: 2px solid wheat;
+}
+.nav ul li a:link, .nav ul li a:visited {
+	display: block;
+	font-size: 18px;
+	background-color: #2E325A;
+	color: wheat;
+	text-align: center;
+}
+.nav ul li a:hover {
+	background-color: #040408;
+}
+
+/*设置中间右侧主要内容及每一块部分相同属性统一设置相同样式，部分细节单独设置*/
+.rightside .content {
+	padding-top: 30px;
+	padding-left: 30px;
+}
+.rightside .content .item > * {
+	line-height: 150%;
+}/*设置每一部分行都为1.5倍行距*/
+.rightside .content .item {
+	margin-bottom: 13px;
+}
+.img-list .item {
+	margin-right: -5px;
+	height: 175px;
+}
+.img-list .item img {
+	width: 120px;
+	height: 158px;
+}
+.img-list .item .mask {
+	display: block;
+	border-left: 5px solid black;
+	width: 10px;
+	height: 100px;
+	margin-top: 20px;
+}/*给图片列表中每张图片信息加个遮罩*/
+.img-list .item p, .img-list .item .mask {
+	margin-left: 0px;
+	margin-top: -6px;
+	color: #fff;
+	height: 22px;
+	left: 0;
+	line-height: 22px;
+	position: absolute;
+	text-align: center;
+	width: 120px;
+	font-size: 15px;
+}
+.img-list .item .mask {
+	background: #000;
+	opacity: .5;
+}/*设置遮罩背景颜色及透明度*/
+/*设置最新资讯中的大体宽度及连接样式*/
+.news, .rank {
+	width: 200px;
+}
+.news a {
+	width: 250px;
+	color: #333;
+	font-size: 15px;
+	display: block;
+	margin-bottom: 2px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	line-height: 170%;
+}
+.news a:hover {
+	color: burlywood;
+}
+/*设置内地女星榜样式*/
+.rank .photo1 img {
+	width: 100px;
+	height: 120px;
+	margin-right: 20px;
+}
+.rank .state {
+	margin-right: -40px;
+	font-size: 13px;
+	float: right;
+}
+/*设置明星人气榜样式*/
+.moods .title {
+	margin-bottom: -25px;
+}
+.moods .content {
+	margin: 10px 10px;
+}
+.weekbtn {
+	margin-left: -15px;
+	background-color: #333;
+	color: #FFF;
+	border-right: none;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+.monthbtn {
+	margin-left: -4px;
+	border-left: none;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	color: #333;
+	background-color: #FFF;
+}
+.weekbtn, .monthbtn {
+	height: 35px;
+	font-size: 15px;
+	width: 120px;
+	margin-bottom: 20px;
+	outline: none;
+}
+.item .avatar img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.items .item {
+	float: left;
+}
+.items .item > * {
+	margin-left: 20px;
+	float: left;
+	text-align: center;
+}
+.items .item .num {
+	margin-top: 30px;
+}
+.monthlist {
+	display: none;
+}
+.myrank {
+	display: inline-block;
+	border-top: .1px solid #333;
+	width: 200px;
+	padding: 10px;
+	border-bottom: .1px solid #333;
+}
+/*设置词条统计样式*/
+.times {
+	padding-top: 4px;
+	padding-left: 30px;
+}
+.times .title{
+	margin-bottom: -4px;
+}
+
+/*设置简介部分样式*/
+.intro {
+	margin-top: -260px;
+}
+.intro p {
+	text-indent: 2em;
+}
+/*设置首页尾部样式*/
+.footer {
+	margin-top: 230px;
+	margin-bottom: 10px;
+}
+.footer p {
+	text-align: center;
+	font-size: 13px;
+}

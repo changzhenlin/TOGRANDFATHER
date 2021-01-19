@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	color: #333;
+	margin: 0px;
+	padding: 0px;
+	background-color:#F1EBE9;
+}
+.container{
+	max-width: 1280px;
+	margin: 0px auto;
+	overflow: auto;
+	display: block;
+	height: auto;
+}/*给放置主体内容的容器设置最大宽度，并将其内容居中显示，当内容溢出出现滚动条，设置成块级元素*/
+
+/*设置不同宽度的块级区域，使其想做浮动，设置position为relative*/
+.col-3,.col-7,.col-2,.col-8,.col-6{
+	float: left;
+	position: relative;
+}
+.col-2{
+	width: 20%;
+}
+.col-3{
+	width: 30%;
+}
+.col-6{
+	width: 60%;
+}
+.col-7{
+	width: 70%;
+}
+.col-8{
+	width: 80%;
+}
+/*给浮动元素前后增加伪元素，清除浮动*/
+.clearf:after,.clearf:before{
+	content: " ";
+	display: block;
+	clear: both;
+}
+.leftside > *
+{
+	text-align: center;
+}
+.leftside img{
+	margin: 25px auto;
+	display: block;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 3px solid wheat;
+}
+/*设置所有子页导航样式*/
+ul{
+	list-style: none;
+}
+.vicenav{
+margin-left: 27px;
+}
+.vicenav ul li a:link,.vicenav ul li a:visited{
+	width: 110px;
+    line-height: 35px;
+	text-decoration: none;
+	display: block;
+	font-size: 18px;
+	background-color:#2E325A;
+	color: wheat;
+	text-align: center;
+	border-bottom: 2px solid wheat;	
+}
+.vicenav ul li a:hover{
+background-color:#040408;	
+}
+/*设置所有子页主要内容区样式*/
+.maincontent .item{
+	margin-top: 10px;
+	float: left;
+}
+.maincontent{
+	font-size: 16px;
+	line-height: 34px;
+	letter-spacing: .5px;
+	color: #444;
+	padding: 0px 50px;
+	margin: 45px auto;
+}
+.maincontent .bigtitle{
+	margin-bottom: -5px;
+}
+.maincontent .vbar{
+	border-left: 4px solid wheat;
+	width:800px;	
+	height: 35px;
+	margin-bottom: -10px;
+	padding-left: 10px;
+}
+/*设置主要内容右侧图片区样式*/
+.maincontent .rightphoto{
+    padding-left: 30px;
+	padding-top: 80px;
+}
+.maincontent .rightphoto img{
+	margin-bottom: 150px;
+}
+.item .rightphotos{
+	margin-top: 60px;
+	margin-left: 20px;
+}
+.roles{
+	font-size: 14px;
+	text-align: center;
+}
+.item{
+	margin-bottom: -20px;
+}
+
+/*设置演艺经历子页影视中扮演的角色部分样式*/
+.item .photos{
+margin: 0px 20px;
+}
+.item .photos img{
+	padding-left: 3px;
+}
+
+/*设置主要作品子页样式*/
+.list{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.list .item{
+	width: 300px;
+height: 110px;
+}
+.list .item img{
+	width:64px;
+	height: 87px;
+	float: left;	
+}
+.list .item .info{
+	float: left;
+	font-size: 12px;
+	line-height: .7;
+	margin-left: 10px;
+	margin-top: -5px;
+}
+.list .item .info .name{
+	color: #136EC2;
+}
+.list .item .info span{
+	margin-left: 6px;
+	color:blue;
+}
+.list .item .info b{
+	color: black;
+}
+/*设置所有子页表格区样式*/
+table{
+	margin-top: 35px;
+	text-align: center;
+	margin-left: 10px;
+	border-collapse: collapse;
+}
+
+/*设置早年经历子页样式*/
+.item .bigphoto{
+	margin: 20px 80px;
+}
+/*设置精彩视频子页样式*/
+.item video{
+	padding-bottom: 17px;
+}
+video{
+margin: 20px 150px;
+	margin-bottom: -30px;
+	outline: none;
+}
+/*设置在线留言子页样式*/
+textarea{
+	font-size: 14px;
+	vertical-align: top;	
+}
+.line-1{
+	text-align: right;
+	width: 100px;
+}
+.line-2{
+	text-align: left;
+	width: 600px;
+}
+.line-1,.line-2{
+	padding-top: 0px;
+	vertical-align:text-top;
+}
+textarea,.message tr,.message td{
+	margin: 0px;
+	padding: 0px;
+}
+.line-2 button{
+	margin-top: 5px;
+	background-color:#2E325A;
+	color: wheat;width: 65px;
+	height: 30px;
+	font-size: 15px;
+}
+
+/*设置子页尾部*/
+.footer{
+	margin-top: 230px;
+}
+.footer p{
+	text-align: center;
+	font-size: 13px;
+}
+.nav6-footer{
+	margin-top: 300px;
+}
+.nav9-footer{
+	margin-top: 500px;
+}
+
