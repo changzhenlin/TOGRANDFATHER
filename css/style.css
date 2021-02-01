@@ -1348,6 +1348,15 @@ select.form-control:not([size]):not([multiple]){
 	cursor: pointer;
 }
 
+.my-container{
+	display: flex;
+	width: 90%;
+	/* height: 300px; */
+	padding: 2%;
+	margin-left: 5%;
+	border-radius: 2px;
+	background-color: #f7f1f1;
+}
 
 
 
